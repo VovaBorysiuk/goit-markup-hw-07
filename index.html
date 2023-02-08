@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -53,6 +56,87 @@
             </li>
           </ul>
         </address>
+        <button data-menu-open type="button" class="menu-open">
+          <svg class="menu-open-icon" width="32" height="22">
+            <use
+              href="./images/symbol-defs.svg#icon-charm_menu-hamburgermenu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div data-menu class="mob-menu">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button data-menu-close type="button" class="menu-close">
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-list list">
+                <li class="mob-item">
+                  <a class="mob-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link curent link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <address class="mob-address">
+              <ul class="mob-address-list list">
+                <li class="mob-address-item">
+                  <a
+                    class="mob-address-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-address-item">
+                  <a class="mob-address-link link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -125,6 +209,10 @@
           <ul class="projects-list list">
             <li class="project-item">
               <img
+                srcset="
+                  ./images/computerprogram.jpg    1x,
+                  ./images/computerprogram-2x.jpg 2x
+                "
                 src="./images/computerprogram.jpg"
                 alt="computer program"
                 width="360"
@@ -133,6 +221,7 @@
             </li>
             <li class="project-item">
               <img
+                srcset="./images/messanger.jpg 1x, ./images/messanger-2x.jpg 2x"
                 src="./images/messanger.jpg"
                 alt="messanger"
                 width="360"
@@ -141,6 +230,10 @@
             </li>
             <li class="project-item">
               <img
+                srcset="
+                  ./images/mobileversion.jpg    1x,
+                  ./images/mobileversion-2x.jpg 2x
+                "
                 src="./images/mobileversion.jpg"
                 alt="mobile version"
                 width="360"
@@ -151,11 +244,15 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/markguerrero.jpg 1x,
+                  ./images/imgMark-2x.jpg   2x
+                "
                 src="./images/markguerrero.jpg"
                 alt="Foto Mark Guerrero"
                 width="264"
@@ -196,6 +293,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tomford.jpg 1x, ./images/imgTom-2x.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="Foto Tom Ford"
                 width="264"
@@ -236,6 +334,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camilagarcia.jpg 1x,
+                  ./images/imgCamila-2x.jpg 2x
+                "
                 src="./images/camilagarcia.jpg"
                 alt="Foto Camila Garcia"
                 width="264"
@@ -276,6 +378,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/danielwilson.jpg 1x,
+                  ./images/imgDaniel-2x.jpg 2x
+                "
                 src="./images/danielwilson.jpg"
                 alt="Foto Daniel Wilson"
                 width="264"
@@ -318,7 +424,7 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="customer-title">Customers</h2>
           <ul class="customers-list">
             <li class="customer-item">
@@ -411,7 +517,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-wrap">
+        <form class="subscribe-wrap">
           <label for="email"><p class="subscribe-label">Subscribe</p></label>
           <div class="row-wrap">
             <input
@@ -429,7 +535,7 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -492,5 +598,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
