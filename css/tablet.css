@@ -7,6 +7,10 @@
     display: none;
   }
 
+  .mobile-menu-btn {
+    display: none;
+  }
+
   .header-list {
     display: flex;
     margin-left: 76px;
