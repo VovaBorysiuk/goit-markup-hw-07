@@ -3,6 +3,10 @@
     width: 768px;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .header-list {
     display: flex;
     margin-left: 76px;
@@ -163,8 +167,7 @@
     max-width: 408px;
   }
 
-   .menu-open-icon{
+  .menu-open-icon {
     display: none;
-   }
-
+  }
 }
