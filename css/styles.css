@@ -162,7 +162,7 @@ body {
   padding-top: 112px;
   padding-bottom: 112px;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -283,7 +283,7 @@ body {
 .team-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 72px;
 }
 
 .team-item {
@@ -432,9 +432,10 @@ body {
 }
 
 .social-wrap {
+ margin-top: 72px;
 }
 .social-media-text {
-  margin-top: 72px;
+ 
   text-align: center;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
