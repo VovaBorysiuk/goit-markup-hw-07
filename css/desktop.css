@@ -108,6 +108,7 @@
 
   .customers-list {
     gap: 22px;
+    flex-wrap: nowrap;
   }
 
   .customer-item {

@@ -973,7 +973,7 @@ textarea {
     text-transform: capitalize;
     color: var(--second-page-color)
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-site-nav .item:not(:last-child) {
     margin-bottom: 40px;
@@ -1054,5 +1054,5 @@ textarea {
     height: 24px;
     fill: var(--third-page-color);
   }
-
 }
+
